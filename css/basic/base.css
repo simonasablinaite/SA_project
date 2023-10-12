@@ -16,30 +16,83 @@ body {
     font-weight: 600;
 }
 
-.container {
-    background-color: cadetblue;
-}
-
-.row {
-    background-color: #fff;
-}
-
 .main-header {
     color: var(--text-color);
+    font-size: var(--fs-20);
 }
 
 .main-title {
     color: var(--text-color);
+    font-size: var(--fs-28);
+    margin: var(--space-20) 0;
 }
 
 .section-header {
     color: var(--third-green);
+    font-size: var(--fs-15);
 }
 
 .section-title {
     color: var(--main-green);
+    font-size: var(--fs-20);
+    margin: var(--space-20) 0;
 }
 
 .section-description {
     color: var(--second-green);
+    font-size: var(--fs-12);
+    margin-bottom: var(--space-20);
+}
+
+.link {
+    text-decoration: none;
+    color: var(--third-green);
+}
+
+@media (min-width: 576px) {
+    .section-header {
+        font-size: var(--fs-18);
+    }
+    .section-title {
+        font-size: var(--fs-25);
+    }
+    .section-description {
+        font-size: var(--fs-15);
+    }
+}
+
+@media (min-width: 768px) {
+    .main-title {
+        font-size: var(--fs-35);
+    }
+    .section-header {
+        font-size: var(--fs-20);
+    }
+    .section-title {
+        font-size: var(--fs-30);
+    }
+    .section-description {
+        font-size: var(--fs-18);
+    }
+}
+
+@media (min-width: 992px) {
+    .main-title {
+        font-size: var(--fs-40);
+    }
+    .section-header {
+        font-size: var(--fs-25);
+    }
+    .section-title {
+        font-size: var(--fs-35);
+    }
+    .section-description {
+        font-size: var(--fs-20);
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-title {
+        font-size: var(--fs-45);
+    }
 }

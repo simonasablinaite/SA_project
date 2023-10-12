@@ -7,6 +7,9 @@
 @import '../3-rd-party/fontawesome.min.css';
 
 /* components */
+@import '../components/buttons.css';
+@import '../components/hero.css';
+@import '../components/about.css';
 
 /* Header start */
 /* Header end */
