@@ -3,6 +3,9 @@
 @import '../basic/layout.css';
 @import '../basic/variables.css';
 
+/* 3-rd-party */
+@import '../3-rd-party/fontawesome.min.css';
+
 /* components */
 
 /* Header start */
