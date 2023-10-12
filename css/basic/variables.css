@@ -1,0 +1,19 @@
+:root {
+    /* colors */
+    --main-green: #0c230d;
+    --second-green: #799a6f;
+    --third-green: #5ebc10;
+    --text-color: #fcfaec;
+
+    /* fonts size */
+    --fs-8: 8px;
+    --fs-10: 10px;
+    --fs-12: 12px;
+    --fs-15: 15px;
+    --fs-18: 18px;
+    --fs-20: 20px;
+    --fs-25: 25px;
+    --fs-28: 28px;
+    --fs-30: 30px;
+    --fs-35: 35px;
+}
