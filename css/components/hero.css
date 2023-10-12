@@ -1,0 +1,12 @@
+.hero {
+    background-image: url('../../img/zieminiai-kvieciai.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-btn {
+    box-shadow: 5px 5px 8px 0px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: 5px 5px 8px 0px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 5px 5px 8px 0px rgba(255, 255, 255, 0.75);
+}

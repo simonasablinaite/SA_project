@@ -21,15 +21,18 @@ body {
 }
 
 .row {
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 
 .main-header {
     color: var(--text-color);
+    font-size: var(--fs-20);
 }
 
 .main-title {
     color: var(--text-color);
+    font-size: var(--fs-28);
+    margin: var(--space-20) 0;
 }
 
 .section-header {
@@ -43,3 +46,21 @@ body {
 .section-description {
     color: var(--second-green);
 }
+
+@media (min-width: 768px) {
+    .main-title {
+        font-size: var(--fs-35);
+    }
+}
+
+@media (min-width: 992px) {
+    .main-title {
+        font-size: var(--fs-40);
+    }
+}
+
+/* @media (min-width: 1200px) {
+    .main-title {
+        font-size: var(--fs-35);
+    }
+} */
