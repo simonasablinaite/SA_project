@@ -1,0 +1,45 @@
+html {
+    scroll-behavior: smooth;
+    /* background: #123700; */
+}
+
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Farro', sans-serif;
+    font-weight: 600;
+}
+
+.container {
+    background-color: cadetblue;
+}
+
+.row {
+    background-color: #fff;
+}
+
+.main-header {
+    color: var(--text-color);
+}
+
+.main-title {
+    color: var(--text-color);
+}
+
+.section-header {
+    color: var(--third-green);
+}
+
+.section-title {
+    color: var(--main-green);
+}
+
+.section-description {
+    color: var(--second-green);
+}
