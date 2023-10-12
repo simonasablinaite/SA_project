@@ -33,9 +33,21 @@
     cursor: pointer;
 }
 
+.info-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    background-color: var(--second-green);
+    color: var(--main-color);
+}
+
 @media (min-width: 768px) {
     .information-wrapper {
         display: flex;
         align-items: center;
+    }
+    .info-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
