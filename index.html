@@ -249,8 +249,8 @@
 
    <!-- Gallery start -->
    <section class="container gallery">
-      <div class="row filter-buttons">
-         <div class="col-12 buttons">
+      <div class="row gallery-wrapper">
+         <div class="col-12 filter-buttons">
             <button class="btn active" data-name="visos">Visos</button>
             <button class="btn" data-name="kas-mes">Kas mes</button>
             <button class="btn" data-name="darbas">Darbas</button>
@@ -285,16 +285,9 @@
    <!-- Gallery end -->
 
    <!-- FAQ start -->
-   <!-- <section class="container">
-      <div class="row">
-         <div class="col-12 col-lg-6 ml-lg-5">
-            FAQ CONTENT
-         </div>
-      </div>
-   </section> -->
    <section class="container faq">
       <div class="row">
-         <div class="col-12 col-lg-8 ml-lg-2">
+         <div class="col-12 col-lg-8 ml-lg-2 text-wrapper">
             <h1 class="section-title">Dažniausiai užduodami klausimai</h1>
             <p class="section-description">Jūsų patogumui atsakome į dažniausiai užduodamus klausimus</p>
          </div>
@@ -348,91 +341,91 @@
             </div>
          </div>
       </div>
+   </section>
+
+   <!-- FAQ end -->
+
+   <!-- Contacts start -->
+   <section class="container contacts">
+      <div class="row contacts-wrapper">
+         <div class="col-12 col-md-6 map-wrapper">
+            <iframe
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5303.305514128565!2d24.362442859076236!3d56.022737014023406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e89c7bca9a2b39%3A0xe749625e642bb6e3!2zxb3FqksgxaBpYXVyxJdzIGFydW9kYWk!5e0!3m2!1slt!2slt!4v1697188553222!5m2!1slt!2slt"
+               width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+               referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+         <div class="col-12 col-md-6 addres-wrapper">
+            <div class="text-wrapper">
+               <span class="section-header">Kontaktai</span>
+               <h2 class="section-title">Susisiekite su mumis</h2>
+            </div>
+
+            <address class="col-6 contact-information-wrapper">
+               <div class="contact-information">
+                  <p>Mob.telefonas:</p>
+                  <span>+370 619050735</span>
+               </div>
+               <div class="contact-information">
+                  <p>El.paštas:</p>
+                  <span>info@siauresaruodai.lt</span>
+               </div>
+               <div class="contact-information">
+                  <p>Adresas:</p>
+                  <span>Baltijos Kelio g. 1C, Talačkoniai</span>
+               </div>
+               <div class="contact-information">
+                  <p>Darbo laikas:</p>
+                  <span class="working-hours">I-V 08:00-17:00
+                     <span class="special-text">*Esant poreikiui darbo laikas koreguojamas</span>
+                  </span>
+
+               </div>
+            </address>
+         </div>
+      </div>
+   </section>
+   <!-- Contacts end -->
+
+   <!-- Footer start -->
+   <footer class="container footer">
+      <div class="row logo-wrapper">
+         <img class="logo" src="./img/siaures-aruodai-logo.png" alt="logo">
       </div>
 
-      <!-- FAQ end -->
-
-      <!-- Contacts start -->
-      <section class="container contacts">
-         <div class="row contacts-wrapper">
-            <div class="col-12 col-md-6 map-wrapper">
-               <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5303.305514128565!2d24.362442859076236!3d56.022737014023406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e89c7bca9a2b39%3A0xe749625e642bb6e3!2zxb3FqksgxaBpYXVyxJdzIGFydW9kYWk!5e0!3m2!1slt!2slt!4v1697188553222!5m2!1slt!2slt"
-                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="col-12 col-md-6 addres-wrapper">
-               <div class="text-wrapper">
-                  <span class="section-header">Kontaktai</span>
-                  <h2 class="section-title">Susisiekite su mumis</h2>
-               </div>
-
-               <address class="col-6 contact-information-wrapper">
-                  <div class="contact-information">
-                     <p>Mob.telefonas:</p>
-                     <span>+370 619050735</span>
-                  </div>
-                  <div class="contact-information">
-                     <p>El.paštas:</p>
-                     <span>info@siauresaruodai.lt</span>
-                  </div>
-                  <div class="contact-information">
-                     <p>Adresas:</p>
-                     <span>Baltijos Kelio g. 1C, Talačkoniai</span>
-                  </div>
-                  <div class="contact-information">
-                     <p>Darbo laikas:</p>
-                     <span class="working-hours">I-V 08:00-17:00
-                        <span class="special-text">*Esant poreikiui darbo laikas koreguojamas</span>
-                     </span>
-
-                  </div>
-               </address>
+      <div class="row footer-wrapper">
+         <div class="col-12 footer-col">
+            <h4>Kooperatyvas</h4>
+            <ul>
+               <li>
+                  <a href="http://localhost:3901/#hero">Pagrindinis</a>
+                  <a href="http://localhost:3901/#about-us">Apie mus</a>
+                  <a href="http://localhost:3901/#services">Paslaugos</a>
+                  <a href="http://localhost:3901/#sponsores">Partneriai</a>
+                  <a href="http://localhost:3901/#gallery">Galerija</a>
+                  <a href="http://localhost:3901/#contacts">Kontaktai</a>
+               </li>
+            </ul>
+         </div>
+         <div class="col-12 footer-col">
+            <h4>Galime padėti</h4>
+            <ul>
+               <li>
+                  <a href="#">DŪK</a>
+                  <a href="#">Susisiekite</a>
+               </li>
+            </ul>
+         </div>
+         <div class="col-12 footer-col">
+            <h4>Sekite mus</h4>
+            <div class="social-links">
+               <a href="#"> <i class="fab fa-facebook-f"></i></a>
+               <a href="#"> <i class="fab fa-instagram"></i></a>
             </div>
          </div>
-      </section>
-      <!-- Contacts end -->
-
-      <!-- Footer start -->
-      <footer class="container footer">
-         <div class="row logo-wrapper">
-            <img class="logo" src="./img/siaures-aruodai-logo.png" alt="logo">
-         </div>
-
-         <div class="row footer-wrapper">
-            <div class="col-12 footer-col">
-               <h4>Kooperatyvas</h4>
-               <ul>
-                  <li>
-                     <a href="http://localhost:3901/#hero">Pagrindinis</a>
-                     <a href="http://localhost:3901/#about-us">Apie mus</a>
-                     <a href="http://localhost:3901/#services">Paslaugos</a>
-                     <a href="http://localhost:3901/#sponsores">Partneriai</a>
-                     <a href="http://localhost:3901/#gallery">Galerija</a>
-                     <a href="http://localhost:3901/#contacts">Kontaktai</a>
-                  </li>
-               </ul>
-            </div>
-            <div class="col-12 footer-col">
-               <h4>Galime padėti</h4>
-               <ul>
-                  <li>
-                     <a href="#">DŪK</a>
-                     <a href="#">Susisiekite</a>
-                  </li>
-               </ul>
-            </div>
-            <div class="col-12 footer-col">
-               <h4>Sekite mus</h4>
-               <div class="social-links">
-                  <a href="#"> <i class="fab fa-facebook-f"></i></a>
-                  <a href="#"> <i class="fab fa-instagram"></i></a>
-               </div>
-            </div>
-         </div>
-      </footer>
-      <!-- Footer end -->
-      <script src="./js/main.js" type="module"></script>
+      </div>
+   </footer>
+   <!-- Footer end -->
+   <script src="./js/main.js" type="module"></script>
 </body>
 
 </html>
