@@ -174,8 +174,24 @@ form .post-btn button:hover {
     }
 }
 
+.sponsores-banner-wrapper {
+    background-color: var(--second-green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sponsores-banner > img {
+    width: 100px;
+}
+
 @media (min-width: 768px) {
     .sponsores-wrapper > .image-wrapper img {
         height: 200px;
+    }
+    .sponsores-banner-wrapper {
+        display: flex;
+        flex-direction: row;
     }
 }
