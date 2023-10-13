@@ -24,6 +24,10 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+   <!-- FONTAWESOME -->
+   <link rel="stylesheet" type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 
 <body>
@@ -175,12 +179,59 @@
    <!-- Services end -->
 
    <!-- Sponsores start -->
-   <section class="container">
-      <div class="row">
-         <div class="col-12 col-md-5 col-lg-3 ml-lg-1">TEXT</div>
-         <div class="col-12 col-md-5 col-lg-3 ml-lg-1">IMG</div>
-         <div class="col-12 col-md-5 col-lg-3 ml-lg-1">RATINGS</div>
+   <section class="container sponsores">
+      <div class="row sponsores-wrapper">
+         <div class="col-12 col-md-5 text-wrapper">
+            <span class="section-header">Mumis pasitiki</span>
+            <h2 class="section-title">Bendradarbiaujame su kitais ūkiais, įmonėmis</h2>
+            <p class="section-description">
+               Glaudžiai bendradarbiaujame su tokiomis įmonėmis kaip UAB "Agrorodeo", kurie vieni didžiausių grūdų
+               eksportuotojai Baltijos šalyse, taip pat, ŽŪK "Lagrenas", UAB "Dotnuva Baltic", UAB "Agrochema" ir
+               kitomis.
+            </p>
+         </div>
+         <div class="col-12 col-md-5 col-lg-4 image-wrapper">
+            <img src="./img/bendradarbiaujame.png" alt="bendradarbiaujame">
+         </div>
+
+         <div class="col-12 ml-md-1 col-lg-3 ml-lg-0 rating-area">
+            <div class="post">
+               <p class="text">Ačiū už įvertinimą!🙂</p>
+               <div class="edit">Koreguoti</div>
+            </div>
+            <div class="star-widget">
+               <input type="radio" name="rate" id="rate-5">
+               <label for="rate-5" class="fas fa-star"></label>
+
+               <input type="radio" name="rate" id="rate-4">
+               <label for="rate-4" class="fas fa-star"></label>
+
+               <input type="radio" name="rate" id="rate-3">
+               <label for="rate-3" class="fas fa-star"></label>
+
+               <input type="radio" name="rate" id="rate-2">
+               <label for="rate-2" class="fas fa-star"></label>
+
+               <input type="radio" name="rate" id="rate-1">
+               <label for="rate-1" class="fas fa-star"></label>
+
+               <div class="usersComments" id="comment"></div>
+               <form action="#">
+                  <header></header>
+                  <div class="textarea">
+                     <textarea placeholder="Palikite savo atsiliepimą." cols="30"></textarea>
+                  </div>
+                  <div class="post-btn">
+                     <button type="submit">Pateikti</button>
+                  </div>
+               </form>
+            </div>
+         </div>
       </div>
+      </div>
+
+
+
       <div class="row">
          <div class="col-12 col-md-3">IMG CONTENT</div>
          <div class="col-12 col-md-3">IMG CONTENT</div>
