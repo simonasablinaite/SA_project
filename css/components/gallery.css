@@ -1,9 +1,10 @@
 .gallery {
     position: relative;
     width: 100%;
+    padding-bottom: 0;
 }
 
-.filter-buttons > .buttons {
+.filter-buttons {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -11,14 +12,14 @@
     gap: 20px;
 }
 
-.filter-buttons > .buttons > button {
+.filter-buttons > button {
     font-size: var(--fs15);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     font-weight: 600;
     text-transform: uppercase;
 }
 
-.filter-buttons > .buttons > button:hover {
+.filter-buttons > button:hover {
     background-color: var(--second-green);
 }
 
