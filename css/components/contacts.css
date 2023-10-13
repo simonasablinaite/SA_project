@@ -1,0 +1,38 @@
+.map-wrapper iframe {
+    width: 100%;
+}
+
+.contact-information {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: var(--fs-15);
+    font-weight: 100;
+    margin-top: 10px;
+}
+
+.working-hours {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-information-wrapper .special-text {
+    font-size: var(--fs-8);
+}
+
+@media (min-width: 768px) {
+    .contacts-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-information {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .contact-information {
+        font-size: var(--fs-18);
+    }
+}
