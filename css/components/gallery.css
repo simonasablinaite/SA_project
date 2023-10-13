@@ -1,8 +1,6 @@
 .gallery {
     position: relative;
     width: 100%;
-    padding: 20px;
-    margin: 40px auto;
 }
 
 .filter-buttons > .buttons {
