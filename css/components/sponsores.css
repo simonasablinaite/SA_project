@@ -187,11 +187,14 @@ form .post-btn button:hover {
 }
 
 @media (min-width: 768px) {
-    .sponsores-wrapper > .image-wrapper img {
-        height: 200px;
-    }
     .sponsores-banner-wrapper {
         display: flex;
         flex-direction: row;
+    }
+}
+
+@media (min-width: 992px) {
+    .sponsores-banner > img {
+        width: 150px;
     }
 }
