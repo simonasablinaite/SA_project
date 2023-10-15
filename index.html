@@ -32,21 +32,51 @@
 
 <body>
    <!-- Header start -->
-   <header>
-      <div class="container">
-         <div class="row">
-            <div class="col-12">
-               LOGO + NAVIGATION
-            </div>
+   <header class="container header">
+      <div class="row header-content">
+         <a href="/">
+            <img class="logo" src="./img/siaures-aruodai-logo.png" alt="logo">
+         </a>
+
+         <nav class="nav">
+            <ul class="nav-list">
+               <li class="nav-item">
+                  <a href="/" class="nav-link">Pagrindinis</a>
+               </li>
+               <li class="nav-item">
+                  <a href="#about-us" class="nav-link">Apie mus</a>
+               </li>
+               <li class="nav-item">
+                  <a href="#services" class="nav-link">Paslaugos</a>
+               </li>
+               <li class="nav-item">
+                  <a href="#sponsores" class="nav-link">Mumis pasitiki</a>
+               </li>
+               <li class="nav-item">
+                  <a href="#gallery" class="nav-link">Galerija</a>
+               </li>
+               <li class="nav-item">
+                  <a href="#faq" class="nav-link">DŪK</a>
+               </li>
+               <li class="nav-item">
+                  <a href="#contacts" class="nav-link">Kontaktai</a>
+               </li>
+            </ul>
+         </nav>
+
+         <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
          </div>
       </div>
    </header>
    <!-- Header end -->
 
    <!-- Hero start -->
-   <section class="container hero">
+   <section class="container hero" id="hero">
       <div class="row">
-         <div class="col-12">
+         <div class="col-12 text-content">
             <span class="main-header">Grūdų elevatorius</span>
             <h1 class="main-title">Mes pasirūpinsime</h1>
             <span></span>
@@ -57,7 +87,7 @@
    <!-- Hero end -->
 
    <!-- About-us start -->
-   <section class="container about-us">
+   <section class="container about-us" id="about-us">
       <div class="row information-wrapper">
          <div class="col-12 col-md-5 col-lg-6 text-wrapper">
             <span class="section-header">Apie mus</span>
@@ -105,10 +135,9 @@
    <!-- About-us end -->
 
    <!-- Services start -->
-   <section class="container services">
+   <section class="container services" id="services">
       <div class="row">
          <div class="col-12 col-md-8 col-lg-6 text-wrapper">
-
             <span class="section-header">Kodėl verta rinktis mus?</span>
             <h2 class="section-title">Mūsų pranašumas - mūsų pajėgumas</h2>
             <p class="section-description">
@@ -117,7 +146,6 @@
                dideli rinkos žaidėjai - klientui galime pasiųlyti geriausią kainą.
             </p>
          </div>
-
       </div>
       <div class="row services-wrapper">
          <div class="col-12 services-cards">
@@ -141,7 +169,6 @@
                      </p>
                </div>
             </div>
-
             <div class="card">
                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                   <path
@@ -179,7 +206,7 @@
    <!-- Services end -->
 
    <!-- Sponsores start -->
-   <section class="container sponsores">
+   <section class="container sponsores" id="sponsores">
       <div class="row sponsores-wrapper">
          <div class="col-12 col-md-5 text-wrapper">
             <span class="section-header">Mumis pasitiki</span>
@@ -193,7 +220,6 @@
          <div class="col-12 col-md-5 col-lg-4 image-wrapper">
             <img src="./img/bendradarbiaujame.png" alt="bendradarbiaujame">
          </div>
-
          <div class="col-12 ml-md-1 col-lg-3 ml-lg-0 rating-area">
             <div class="post">
                <p class="text">Ačiū už įvertinimą!🙂</p>
@@ -202,19 +228,14 @@
             <div class="star-widget">
                <input type="radio" name="rate" id="rate-5">
                <label for="rate-5" class="fas fa-star"></label>
-
                <input type="radio" name="rate" id="rate-4">
                <label for="rate-4" class="fas fa-star"></label>
-
                <input type="radio" name="rate" id="rate-3">
                <label for="rate-3" class="fas fa-star"></label>
-
                <input type="radio" name="rate" id="rate-2">
                <label for="rate-2" class="fas fa-star"></label>
-
                <input type="radio" name="rate" id="rate-1">
                <label for="rate-1" class="fas fa-star"></label>
-
                <div class="usersComments" id="comment"></div>
                <form action="#">
                   <header></header>
@@ -229,7 +250,6 @@
          </div>
       </div>
       </div>
-
       <div class="row sponsores-banner-wrapper">
          <div class="col-12 col-md-3 sponsores-banner">
             <img src="./img/agrochema-logo.png" alt="agrochema">
@@ -248,7 +268,7 @@
    <!-- Sponsores end -->
 
    <!-- Gallery start -->
-   <section class="container gallery">
+   <section class="container gallery" id="gallery">
       <div class="row gallery-wrapper">
          <div class="col-12 filter-buttons">
             <button class="btn active" data-name="visos">Visos</button>
@@ -278,14 +298,13 @@
                   <p class="card-text">Lorem ipsum dolor sit amet.</p>
                </div>
             </a>
-
          </div>
       </div>
    </section>
    <!-- Gallery end -->
 
    <!-- FAQ start -->
-   <section class="container faq">
+   <section class="container faq" id="faq">
       <div class="row">
          <div class="col-12 col-lg-8 ml-lg-2 text-wrapper">
             <h1 class="section-title">Dažniausiai užduodami klausimai</h1>
@@ -342,11 +361,10 @@
          </div>
       </div>
    </section>
-
    <!-- FAQ end -->
 
    <!-- Contacts start -->
-   <section class="container contacts">
+   <section class="container contacts" id="contacts">
       <div class="row contacts-wrapper">
          <div class="col-12 col-md-6 map-wrapper">
             <iframe
@@ -359,7 +377,6 @@
                <span class="section-header">Kontaktai</span>
                <h2 class="section-title">Susisiekite su mumis</h2>
             </div>
-
             <address class="col-6 contact-information-wrapper">
                <div class="contact-information">
                   <p>Mob.telefonas:</p>
@@ -378,7 +395,6 @@
                   <span class="working-hours">I-V 08:00-17:00
                      <span class="special-text">*Esant poreikiui darbo laikas koreguojamas</span>
                   </span>
-
                </div>
             </address>
          </div>
