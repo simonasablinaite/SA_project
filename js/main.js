@@ -1,4 +1,18 @@
 //  Header start 
+const navEl = document.querySelector('.nav');
+const hamburgerEl = document.querySelector('.hamburger');
+
+// Hamburgerio mygtuko paspaudimo efektas:
+hamburgerEl.addEventListener('click', () => {
+   navEl.classList.toggle('nav-open');
+   hamburgerEl.classList.toggle('hamburger-open');
+});
+
+// paspaudus nuorodą - dingsta menu
+navEl.addEventListener('click', () => {
+   navEl.classList.remove('nav-open');
+   hamburgerEl.classList.remove('hamburger-open');
+});
 //  Header end 
 
 //  Hero start 
