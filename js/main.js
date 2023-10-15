@@ -16,6 +16,19 @@ navEl.addEventListener('click', () => {
 //  Header end 
 
 //  Hero start 
+const changingPhrasesEl = document.querySelector('#typing-text');
+const phrases = ['sausų grūdų laikymu', 'drėgnų grūdų laikymu', 'drėgnos produkcijos džiovinimu'];
+
+let currentIndex = 0;
+
+function changePhrases() {
+   changingPhrasesEl.innerHTML = phrases[currentIndex];
+   currentIndex = (currentIndex + 1) % phrases.length;
+};
+
+setInterval(changePhrases, 2000);
+
+changePhrases();
 //  Hero end 
 
 //  About-us start 
