@@ -3,6 +3,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height: 400px;
+}
+
+.hero .row .text-content {
+    padding-top: 50px;
 }
 
 .hero-btn {

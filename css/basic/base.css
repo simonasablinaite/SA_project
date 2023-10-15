@@ -12,6 +12,7 @@ body * {
 }
 
 body {
+    padding-top: 80px;
     font-family: 'Farro', sans-serif;
     font-weight: 600;
 }
