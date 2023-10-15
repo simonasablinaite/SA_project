@@ -12,15 +12,18 @@
 <body>
    <div class="form">
       <form class="message-form" method="post">
-         <input type="text" placeholder="Nurodykite vardą">
-         <input type="email" placeholder="Nurodykite savo el. paštą">
-         <input type="text" placeholder="Nurodykite temą">
+         <input type="text" placeholder="Nurodykite vardą" id="name" autocomplete="off">
+         <input type="email" placeholder="Nurodykite savo el. paštą" id="email" autocomplete="off">
+         <input type="text" placeholder="Nurodykite temą" id="subject" autocomplete="off">
 
          <textarea id="message" placeholder="Jūsų žinutės tekstas" cols="30" rows="10"></textarea>
 
-         <button id="btn" class="btn">Siųsti</button>
+         <button id="btn" class="btn" type="submit">Siųsti</button>
       </form>
    </div>
+
+   <script src="../js/form.js" type="module"></script>
+   <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 </html>
