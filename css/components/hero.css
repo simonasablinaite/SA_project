@@ -7,11 +7,14 @@
 }
 
 .hero .row .text-content {
-    padding-top: 50px;
+    padding-top: 80px;
 }
 
-.hero-btn {
-    box-shadow: 5px 5px 8px 0px rgba(255, 255, 255, 0.75);
-    -webkit-box-shadow: 5px 5px 8px 0px rgba(255, 255, 255, 0.75);
-    -moz-box-shadow: 5px 5px 8px 0px rgba(255, 255, 255, 0.75);
+.hero > .row > .text-contact > .btn-contact {
+    transition: all 0.3s;
+    margin-top: 20px;
+}
+
+.hero > .row > .text-contact > .btn-contact:hover {
+    transform: scale(1.15);
 }

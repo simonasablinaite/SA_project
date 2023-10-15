@@ -25,7 +25,7 @@ body {
 .main-title {
     color: var(--text-color);
     font-size: var(--fs-28);
-    margin: var(--space-20) 0;
+    margin: 40px 0;
 }
 
 .section-header {
@@ -45,9 +45,9 @@ body {
     margin-bottom: var(--space-20);
 }
 
-.link {
+a {
     text-decoration: none;
-    color: var(--third-green);
+    /* color: var(--third-green); */
 }
 
 @media (min-width: 576px) {
