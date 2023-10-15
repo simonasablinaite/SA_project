@@ -32,7 +32,6 @@
 
 .nav-link:hover,
 .nav-link:focus {
-    /* color: var(--third-green); */
     color: #ece732;
 }
 
