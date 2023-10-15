@@ -32,7 +32,8 @@
 
 .nav-link:hover,
 .nav-link:focus {
-    color: var(--third-green);
+    /* color: var(--third-green); */
+    color: #ece732;
 }
 
 .hamburger {
