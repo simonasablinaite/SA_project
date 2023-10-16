@@ -78,31 +78,31 @@ input#rate-5:checked ~ label {
     text-shadow: 0 0 8px rgb(165, 101, 53);
 }
 
-#rate-1:checked ~ form header:before {
+#rate-1:checked ~ .rating-form header:before {
     content: 'Man labai nepatiko 😠';
 }
-#rate-2:checked ~ form header:before {
+#rate-2:checked ~ .rating-form header:before {
     content: 'Man nepatiko 😔';
 }
-#rate-3:checked ~ form header:before {
+#rate-3:checked ~ .rating-form header:before {
     content: 'Tiesiog patiko 🙂';
 }
-#rate-4:checked ~ form header:before {
+#rate-4:checked ~ .rating-form header:before {
     content: 'Man labai patiko 🤩';
 }
-#rate-5:checked ~ form header:before {
+#rate-5:checked ~ .rating-form header:before {
     content: 'Nuostabi! 😍';
 }
 
-form {
+.rating-form {
     float: right;
     display: none;
 }
 
-input:checked ~ form {
+input:checked ~ .rating-form {
     display: block;
 }
-form header {
+.rating-form header {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -114,13 +114,13 @@ form header {
     transition: all 0.2s ease;
 }
 
-form .textarea {
+.rating-form .textarea {
     height: 100px;
     width: 100%;
     overflow: hidden;
 }
 
-form .textarea textarea {
+.rating-form .textarea textarea {
     width: 100%;
     height: 100px;
     outline: none;
@@ -133,13 +133,13 @@ form .textarea textarea {
     resize: none;
 }
 
-form .post-btn {
+.rating-form .post-btn {
     height: 45px;
     width: 100%;
     margin: 15px 0;
 }
 
-form .post-btn button {
+.rating-form .post-btn button {
     height: 100%;
     width: 100%;
     border: 1px solid #444;
@@ -153,7 +153,7 @@ form .post-btn button {
     transition: all 0.3 ease;
 }
 
-form .post-btn button:hover {
+.rating-form .post-btn button:hover {
     background: #1b1b1b;
 }
 
