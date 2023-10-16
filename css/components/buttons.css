@@ -1,6 +1,12 @@
 .btn {
-    background-color: var(--main-green);
-    padding: var(--space-10) var(--space-15);
+    background: rgb(12, 35, 13);
+    background: rgb(164, 191, 152);
+    background: linear-gradient(
+        36deg,
+        rgba(164, 191, 152, 1) 0%,
+        rgba(12, 35, 13, 1) 100%
+    );
+    padding: var(--space-15) var(--space-20);
     border-radius: 10px;
     color: var(--text-color);
     font-weight: 800;
@@ -8,4 +14,40 @@
     cursor: pointer;
     border: 1px solid white;
     box-shadow: 5px 5px 8px 0px rgba(255, 255, 255, 0.75);
+}
+
+.filter-btn {
+    --b: 3px; /* border thickness */
+    --s: 0.45em; /* size of the corner */
+    --color: #373b44;
+    padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background: conic-gradient(
+            from 90deg at var(--b) var(--b),
+            #0000 90deg,
+            var(--color) 0
+        )
+        var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+        calc(100% - var(--b) - 2 * var(--_p));
+    transition: 0.3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: 0.6em;
+    font-size: 16px;
+    border: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.filter-btn:hover,
+.filter-btn:focus-visible {
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: 0.05em;
+}
+
+.filter-btn:active {
+    background: var(--color);
+    color: #fff;
 }
