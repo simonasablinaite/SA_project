@@ -44,6 +44,17 @@ changePhrases();
 //  Gallery end 
 
 //  FAQ start 
+const accordionHeaderEl = document.getElementsByClassName('accordion-header');
+
+function accordion() {
+   for (let i = 0; i < accordionHeaderEl.length; i++) {
+      accordionHeaderEl[i].addEventListener('click', () => {
+         accordionHeaderEl[i].classList.toggle('active');
+      })
+   }
+}
+
+accordion();
 //  FAQ end 
 
 //  Contacts start 

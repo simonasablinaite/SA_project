@@ -4,7 +4,6 @@
 
 .wrapper {
     width: 500px;
-    margin: 20px auto 0;
 }
 
 .faq > .row > .text-wrapper {
@@ -53,13 +52,14 @@
     height: 0;
     transition: all 0.5s ease;
     overflow: hidden;
-    background-color: #1111;
+    background-color: var(--main-green);
+    font-size: var(--fs-12);
 }
 
 .wrapper .accordion-wrap .accordion-body p {
     color: white;
     text-align: start;
-    padding: 20px;
+    padding: 20px 15px;
     line-height: 25px;
 }
 
