@@ -428,6 +428,7 @@ input:checked ~ .rating-form {
     flex-wrap: wrap;
     gap: 30px;
     align-items: center;
+    justify-content: center;
 }
 
 .filterable-cards {
