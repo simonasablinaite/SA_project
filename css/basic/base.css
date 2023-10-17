@@ -43,11 +43,12 @@ body {
     color: var(--second-green);
     font-size: var(--fs-12);
     margin-bottom: var(--space-20);
+    line-height: 20px;
 }
 
 a {
     text-decoration: none;
-    /* color: var(--third-green); */
+    color: var(--third-green);
 }
 
 @media (min-width: 576px) {
@@ -74,6 +75,7 @@ a {
     }
     .section-description {
         font-size: var(--fs-18);
+        line-height: 25px;
     }
 }
 
@@ -89,6 +91,7 @@ a {
     }
     .section-description {
         font-size: var(--fs-20);
+        line-height: 30px;
     }
 }
 
