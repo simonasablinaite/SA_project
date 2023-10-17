@@ -478,6 +478,39 @@ input:checked ~ .rating-form {
     font-size: var(--fs-15);
     color: var(--main-green);
 }
+
+.gallery-wrapper .hidden-gallery {
+    display: none;
+    position: relative;
+}
+
+.hidden-gallery img {
+    width: 100%;
+}
+
+.prev,
+.next {
+    font-size: 50px;
+    position: absolute;
+    color: white;
+    cursor: pointer;
+}
+
+.prev {
+    bottom: 210px;
+    left: 10px;
+}
+
+.next {
+    bottom: 210px;
+    right: 10px;
+}
+
+.numbertext {
+    position: absolute;
+    color: white;
+}
+
 /* Gallery end */
 
 /* FAQ start */

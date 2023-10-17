@@ -137,6 +137,25 @@ const filterCards = event => {
 }
 
 filterButtons.forEach(button => button.addEventListener('click', filterCards));
+
+// Papildomos galerijos kodinimas:
+const cardsEl = document.querySelectorAll('.filterable-cards .card');
+
+cardsEl.forEach(card => {
+   card.addEventListener('click', () => {
+     
+      let targetID = card.getAttribute('data-name');
+      let targetGallery = document.getElementById(targetID);
+ 
+      if (targetGallery) {
+document.querySelectorAll('hidden-gallery').forEach(gallery => {
+   gallery.style.display = 'none';
+});
+targetGallery.style.display = 'block';
+      }
+   })
+})
+
 //  Gallery end 
 
 //  FAQ start 
