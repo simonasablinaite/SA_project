@@ -15,6 +15,7 @@
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 1;
 }
 
 .header-content {
@@ -482,6 +483,7 @@ input:checked ~ .rating-form {
 .gallery-wrapper .hidden-gallery {
     display: none;
     position: relative;
+    bottom: 925px;
 }
 
 .hidden-gallery img {
@@ -494,20 +496,26 @@ input:checked ~ .rating-form {
     position: absolute;
     color: white;
     cursor: pointer;
+    bottom: 110px;
 }
 
 .prev {
-    bottom: 210px;
     left: 10px;
 }
 
 .next {
-    bottom: 210px;
     right: 10px;
 }
 
 .numbertext {
     position: absolute;
+    color: white;
+}
+
+.text {
+    position: absolute;
+    bottom: 5px;
+    right: 200px;
     color: white;
 }
 
