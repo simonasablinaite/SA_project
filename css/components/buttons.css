@@ -7,13 +7,18 @@
         rgba(12, 35, 13, 1) 100%
     );
     padding: var(--space-15) var(--space-20);
-    border-radius: 10px;
+    border-radius: 15px;
     color: var(--text-color);
     font-weight: 800;
     letter-spacing: 1px;
     cursor: pointer;
     border: 1px solid white;
     box-shadow: 5px 5px 8px 0px rgba(255, 255, 255, 0.75);
+    font-size: var(--fs-16);
+}
+
+.btn:hover {
+    background: #0c230d;
 }
 
 .filter-btn {
@@ -38,6 +43,7 @@
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    cursor: pointer;
 }
 
 .filter-btn:hover,

@@ -15,6 +15,17 @@
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 1;
+}
+
+.top-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    color: #799a6f;
+    font-size: 12px;
+    font-weight: 100;
 }
 
 .header-content {
@@ -87,17 +98,9 @@
 }
 
 .hero .row .text-content {
-    padding-top: 80px;
+    padding-top: 135px;
 }
 
-.hero > .row > .text-contact > .btn-contact {
-    transition: all 0.3s;
-    margin-top: 20px;
-}
-
-.hero > .row > .text-contact > .btn-contact:hover {
-    transform: scale(1.15);
-}
 /* Hero end */
 
 /* About-us start */
@@ -110,7 +113,7 @@
     height: 300px;
     margin-bottom: 40px;
     height: 400px;
-    /* position: relative; */
+    position: relative;
 }
 
 .video {
@@ -119,21 +122,21 @@
     text-decoration: none;
     border-radius: 50%;
     padding: 20px 15px;
-    /* position: relative; */
+    position: relative;
     bottom: -200px;
-    left: 115px;
+    left: 193px;
 }
 
-/* .overlay {
+.overlay {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     border: 3px solid white;
     position: absolute;
-    bottom: 130px;
-    left: 115px;
+    bottom: 135px;
+    left: 193px;
     cursor: pointer;
-} */
+}
 
 .info-wrapper {
     display: grid;
@@ -163,16 +166,16 @@
 }
 
 .stat-number {
-    font-size: var(--fs-40);
+    font-size: var(--fs-45);
 }
 
 .stat-suffix {
-    font-size: var(--fs-30);
+    font-size: var(--fs-35);
 }
 
 .stat-caption {
     color: var(--main-green);
-    font-size: 12px;
+    font-size: var(--fs-16);
 }
 /* About-us end */
 
@@ -215,14 +218,14 @@
 
 .card-title {
     color: var(--second-green);
-    font-size: var(--fs-18);
+    font-size: var(--fs-20);
     margin-bottom: 15px;
 }
 
 .card-description {
-    font-size: var(--fs-12);
+    font-size: var(--fs-16);
     font-weight: 400;
-    line-height: 18px;
+    line-height: 25px;
     font-style: italic;
 }
 
@@ -445,7 +448,7 @@ input:checked ~ .rating-form {
     padding: 5px;
     border-radius: 8px;
     text-decoration: none;
-    border: 2px solid grey;
+    border: 1px solid grey;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
@@ -554,7 +557,7 @@ input:checked ~ .rating-form {
 }
 
 .wrapper .accordion-wrap .accordion-header.active + .accordion-body {
-    height: 180px;
+    height: 160px;
 }
 /* FAQ end */
 
@@ -755,7 +758,7 @@ footer .logo-wrapper img {
 @media (max-width: 992px) {
     .nav {
         position: fixed;
-        top: 80px;
+        top: 60px;
         left: 0;
         background-color: var(--main-green);
         width: 100%;
