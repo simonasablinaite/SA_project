@@ -562,7 +562,11 @@ input:checked ~ .rating-form {
 /* FAQ end */
 
 /* Contacts start */
-.map-wrapper iframe {
+.map-wrapper a {
+    width: 100%;
+}
+
+.map-wrapper a img {
     width: 100%;
 }
 
