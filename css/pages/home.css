@@ -43,13 +43,13 @@
 .nav-list {
     display: flex;
     list-style: none;
-    column-gap: 30px;
+    column-gap: 20px;
 }
 
 .nav-link {
     text-decoration: none;
     color: var(--second-green);
-    font-size: var(--fs-15);
+    font-size: var(--fs-18);
     transition: all 0.4s;
 }
 
@@ -94,7 +94,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 500px;
+    height: 600px;
 }
 
 .hero .row .text-content {
@@ -538,7 +538,6 @@ input:checked ~ .rating-form {
     height: 0;
     transition: all 0.5s ease;
     overflow: hidden;
-    /* background-color: var(--main-green); */
     font-size: var(--fs-12);
     border: 1px solid var(--main-green);
     border-bottom-left-radius: 5px;
@@ -673,6 +672,12 @@ footer .logo-wrapper img {
 /* Footer end */
 
 @media (min-width: 768px) {
+    .top-header {
+        font-size: var(--fs-16);
+    }
+    .nav-list {
+        font-size: var(--fs-16);
+    }
     .information-wrapper {
         display: flex;
         align-items: center;
@@ -733,9 +738,13 @@ footer .logo-wrapper img {
 }
 
 @media (min-width: 992px) {
-    .info-wrapper {
-        background: none;
+    .top-header {
+        font-size: var(--fs-18);
+        margin-left: 370px;
     }
+    /* .info-wrapper {
+        background: none;
+    } */
     .services-cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -747,6 +756,9 @@ footer .logo-wrapper img {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
+    .wrapper .accordion-wrap .accordion-header.active + .accordion-body {
+        height: 100px;
+    }
     .contact-information {
         font-size: var(--fs-18);
     }
@@ -756,6 +768,24 @@ footer .logo-wrapper img {
     }
     footer .logo-wrapper img {
         width: 300px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .top-header {
+        font-size: var(--fs-18);
+        margin-left: 745px;
+    }
+    .nav-list {
+        column-gap: 30px;
+    }
+    .card-title {
+        font-size: 25px;
+        font-style: italic;
+    }
+    .card-description {
+        font-size: var(--fs-18);
+        align-items: flex-end;
     }
 }
 
@@ -775,7 +805,7 @@ footer .logo-wrapper img {
         row-gap: 20px;
     }
     .nav-link {
-        font-size: 14px;
+        font-size: var(--fs-16);
     }
     .hamburger {
         display: block;
