@@ -140,6 +140,7 @@ filterButtons.forEach(button => button.addEventListener('click', filterCards));
 
 // Papildomos galerijos kodinimas:
 const cardsEl = document.querySelectorAll('.filterable-cards .card');
+const closeBtnEl = document.querySelector('.btn-close');
 
 cardsEl.forEach(card => {
    card.addEventListener('click', () => {
@@ -152,9 +153,15 @@ document.querySelectorAll('hidden-gallery').forEach(gallery => {
    gallery.style.display = 'none';
 });
 targetGallery.style.display = 'block';
+closeBtnEl.addEventListener('click', () => {
+targetGallery.remove();
+// return false;
+})
       }
    })
+
 })
+
 
 //  Gallery end 
 
