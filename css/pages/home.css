@@ -80,11 +80,13 @@
 
 /* Hero start */
 .hero {
-    background-image: url('../../img/zieminiai-kvieciai.jpg');
+    /* background-image: url('../../img/zieminiai-kvieciai.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    height: 500px;
+    background-size: cover; */
+
+    background-color: #709271;
+    height: 100vh;
 }
 
 .hero .row .text-content {
@@ -480,43 +482,21 @@ input:checked ~ .rating-form {
     color: var(--main-green);
 }
 
-.gallery-wrapper .hidden-gallery {
-    display: none;
-    position: relative;
-    bottom: 925px;
+.carousel-container {
+    width: 57.5%;
+    margin: auto;
+    overflow: hidden;
+    border: 5px solid black;
 }
 
-.hidden-gallery img {
+.carousel-slide {
+    display: flex;
     width: 100%;
+    height: 500px;
 }
 
-.prev,
-.next {
-    font-size: 50px;
-    position: absolute;
-    color: white;
-    cursor: pointer;
-    bottom: 110px;
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
-.numbertext {
-    position: absolute;
-    color: white;
-}
-
-.text {
-    position: absolute;
-    bottom: 5px;
-    right: 200px;
-    color: white;
+.carousel-container > .carousel-slide > img {
+    width: 100%;
 }
 
 /* Gallery end */
