@@ -88,22 +88,21 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /* background: #4e6a49; */
     height: 100vh;
 }
 
 .hero .row {
-    width: 90%;
     margin: 180px calc((108% - var(--width)) / 2);
 }
 
 .glass-container {
     float: left;
     margin-top: 50px;
-    height: 400px;
+    height: 500px;
 }
 
 .glass {
+    /* height: 500px; */
     padding: 40px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(15px);
@@ -149,17 +148,6 @@
     bottom: -200px;
     left: 115px;
 }
-
-/* .overlay {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 3px solid white;
-    position: absolute;
-    bottom: 130px;
-    left: 115px;
-    cursor: pointer;
-} */
 
 .info-wrapper {
     display: grid;
@@ -216,8 +204,8 @@
 
 .service-card {
     position: relative;
-    width: 300px;
-    height: 350px;
+    width: 400px;
+    height: 450px;
 }
 
 .service-card .face {
@@ -254,25 +242,26 @@
 
 .service-card .back {
     transform: perspective(600px) rotateY(180deg);
-    background: #d5e0d2;
+    background: #f09a21;
     padding: 15px;
-    color: var(--main-green);
+    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: start;
-    box-shadow: 0 5px 10px rgb(32, 57, 44);
+    box-shadow: 0 5px 10px rgb(161, 91, 0);
 }
 
 .service-card .back h3 {
-    font-size: 25px;
+    font-size: 30px;
     margin-top: 20px;
     letter-spacing: 1px;
     text-align: center;
 }
 
 .service-card .back p {
-    letter-spacing: 0.5px;
+    letter-spacing: 2px;
+    font-size: 18px;
 }
 
 .service-card:hover .front {
@@ -750,6 +739,9 @@ footer .logo-wrapper img {
         display: flex;
         align-items: center;
     }
+    .glass {
+        width: 620px;
+    }
     .info-wrapper {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -809,6 +801,9 @@ footer .logo-wrapper img {
     .info-wrapper {
         background: none;
     }
+    .glass {
+        width: 860px;
+    }
     .services-wrapper {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -851,5 +846,12 @@ footer .logo-wrapper img {
     }
     .hamburger {
         display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .glass {
+        width: 1150px;
+        height: 700px;
     }
 }
