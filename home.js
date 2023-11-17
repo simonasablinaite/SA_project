@@ -162,7 +162,46 @@ targetGallery.remove();
 
 })
 
+// Carousel slide:
+const carouselSlideEl = document.querySelector('.carousel-slide');
+const carouselImagesEl = document.querySelectorAll('.carousel-slide img');
+const prevBtnEl = document.querySelector('#prevBtn');
+const nextBtnEl = document.querySelector('#nextBtn');
 
+// Counter:
+let counter = 1;
+
+const size = carouselImagesEl[0].clientWidth;
+
+carouselSlideEl.style.transform = `translateX(${-size * counter}px)`;
+
+// Button listeners:
+nextBtnEl.addEventListener('click', () => {
+carouselSlideEl.style.transition = 'transform 0.4s ease-in-out';
+counter++;
+
+carouselSlideEl.style.transform = `translateX(${-size * counter}px)`;
+});
+
+prevBtnEl.addEventListener('click', () => {
+   carouselSlideEl.style.transition = 'transform 0.4s ease-in-out';
+   counter--;
+   
+   carouselSlideEl.style.transform = `translateX(${-size * counter}px)`;
+   });
+
+carouselSlideEl.addEventListener('transitionend', () => {
+   if (carouselImagesEl[counter].id === 'last-clone') {
+      carouselSlideEl.style.transition = 'none';
+      counter = carouselImagesEl.length - 2;
+      carouselSlideEl.style.transform = `translateX(${-size * counter}px)`;
+   }
+   if (carouselImagesEl[counter].id === 'first-clone') {
+      carouselSlideEl.style.transition = 'none';
+      counter = carouselImagesEl.length - counter;
+      carouselSlideEl.style.transform = `translateX(${-size * counter}px)`;
+   }
+})
 //  Gallery end 
 
 //  FAQ start 

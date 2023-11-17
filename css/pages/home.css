@@ -18,14 +18,8 @@
     z-index: 1;
 }
 
-.top-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 30px;
-    color: #799a6f;
-    font-size: 12px;
-    font-weight: 100;
+.header .row {
+    margin: 80px calc((100% - var(--width)) / 2);
 }
 
 .header-content {
@@ -43,13 +37,13 @@
 .nav-list {
     display: flex;
     list-style: none;
-    column-gap: 30px;
+    column-gap: 20px;
 }
 
 .nav-link {
     text-decoration: none;
     color: var(--second-green);
-    font-size: var(--fs-15);
+    font-size: var(--fs-18);
     transition: all 0.4s;
 }
 
@@ -88,13 +82,33 @@
 }
 /* Header end */
 
-/* Hero start */
+* Hero start */
 .hero {
-    background-image: url('../../img/zieminiai-kvieciai.jpg');
+    background-image: url('../../img/hero-bg-img.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height: 100vh;
+}
+
+.hero .row {
+    margin: 180px calc((108% - var(--width)) / 2);
+}
+
+.glass-container {
+    float: left;
+    margin-top: 50px;
     height: 500px;
+}
+
+.glass {
+    /* height: 500px; */
+    padding: 40px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 20px;
+    border: 1px solid rgba(225, 225, 225, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 .hero .row .text-content {
@@ -180,53 +194,90 @@
 /* About-us end */
 
 /* Services start */
-.services {
-    padding-top: 0;
-}
 
 .services-wrapper {
+    position: relative;
+    top: -120px;
     width: 100%;
-}
-
-.services-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-.service-card {
-    width: 100%;
-    height: 100%;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-    text-align: center;
-    gap: 20px;
-    border: 1px solid var(--main-green);
-    border-radius: 8px;
-    padding: 20px;
+    gap: 40px;
 }
 
-.service-card svg {
-    width: 70px;
-    fill: #fe7;
-    background-color: var(--main-green);
+.service-card {
+    position: relative;
+    width: 400px;
+    height: 450px;
+}
+
+.service-card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.service-card .front {
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.service-card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-card .front h3 {
+    position: absolute;
     padding: 10px;
-    border-radius: 50%;
+    bottom: 0;
+    width: 100%;
+    height: 65px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
-.card-title {
-    color: var(--second-green);
-    font-size: var(--fs-20);
-    margin-bottom: 15px;
+.service-card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: #f09a21;
+    padding: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: start;
+    box-shadow: 0 5px 10px rgb(161, 91, 0);
 }
 
-.card-description {
-    font-size: var(--fs-16);
-    font-weight: 400;
-    line-height: 25px;
-    font-style: italic;
+.service-card .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.service-card .back p {
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.service-card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.service-card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.services .text-wrapper {
+    position: relative;
+    top: -80px;
 }
 
 /* Services end */
@@ -481,6 +532,24 @@ input:checked ~ .rating-form {
     font-size: var(--fs-15);
     color: var(--main-green);
 }
+
+.carousel-container {
+    width: 57.5%;
+    margin: auto;
+    overflow: hidden;
+    border: 5px solid black;
+}
+
+.carousel-slide {
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+
+.carousel-container > .carousel-slide > img {
+    width: 100%;
+}
+
 /* Gallery end */
 
 /* FAQ start */
@@ -538,7 +607,6 @@ input:checked ~ .rating-form {
     height: 0;
     transition: all 0.5s ease;
     overflow: hidden;
-    /* background-color: var(--main-green); */
     font-size: var(--fs-12);
     border: 1px solid var(--main-green);
     border-bottom-left-radius: 5px;
@@ -673,13 +741,25 @@ footer .logo-wrapper img {
 /* Footer end */
 
 @media (min-width: 768px) {
+    .top-header {
+        font-size: var(--fs-16);
+    }
+    .nav-list {
+        font-size: var(--fs-16);
+    }
     .information-wrapper {
         display: flex;
         align-items: center;
     }
+    .glass {
+        width: 620px;
+    }
     .info-wrapper {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+    }
+    .services-wrapper {
+        grid-template-columns: repeat(2, 1fr);
     }
     .stat-figure {
         font-size: 120px;
@@ -705,10 +785,7 @@ footer .logo-wrapper img {
         display: flex;
         flex-direction: row;
     }
-    .services-cards {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
+
     .filterable-cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -736,8 +813,10 @@ footer .logo-wrapper img {
     .info-wrapper {
         background: none;
     }
-    .services-cards {
-        display: grid;
+    .glass {
+        width: 860px;
+    }
+    .services-wrapper {
         grid-template-columns: repeat(3, 1fr);
     }
     .sponsores-banner > img {
@@ -759,6 +838,24 @@ footer .logo-wrapper img {
     }
 }
 
+@media (min-width: 1200px) {
+    .top-header {
+        font-size: var(--fs-18);
+        margin-left: 745px;
+    }
+    .nav-list {
+        column-gap: 30px;
+    }
+    .card-title {
+        font-size: 25px;
+        font-style: italic;
+    }
+    .card-description {
+        font-size: var(--fs-18);
+        align-items: flex-end;
+    }
+}
+
 @media (max-width: 992px) {
     .nav {
         position: fixed;
@@ -775,9 +872,16 @@ footer .logo-wrapper img {
         row-gap: 20px;
     }
     .nav-link {
-        font-size: 14px;
+        font-size: var(--fs-16);
     }
     .hamburger {
         display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .glass {
+        width: 1150px;
+        height: 700px;
     }
 }
