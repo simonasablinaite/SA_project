@@ -12,7 +12,7 @@ body * {
 }
 
 body {
-    padding-top: 80px;
+    padding-top: 60px;
     font-family: 'Farro', sans-serif;
     font-weight: 600;
 }
@@ -24,31 +24,37 @@ body {
 
 .main-title {
     color: var(--text-color);
-    font-size: var(--fs-28);
+    font-size: var(--fs-25);
     margin: 40px 0;
 }
 
 .section-header {
     color: var(--third-green);
-    font-size: var(--fs-15);
+    font-size: var(--fs-20);
 }
 
 .section-title {
     color: var(--main-green);
-    font-size: var(--fs-20);
+    font-size: var(--fs-25);
     margin: var(--space-20) 0;
 }
 
 .section-description {
     color: var(--second-green);
-    font-size: var(--fs-12);
+    font-size: var(--fs-16);
     margin-bottom: var(--space-20);
-    line-height: 20px;
+    line-height: 25px;
 }
 
 a {
     text-decoration: none;
     color: var(--third-green);
+    font-size: var(--fs-16);
+    line-height: 1.5rem;
+}
+
+a:hover {
+    font-size: var(--fs-18);
 }
 
 @media (min-width: 576px) {
@@ -59,7 +65,7 @@ a {
         font-size: var(--fs-25);
     }
     .section-description {
-        font-size: var(--fs-15);
+        font-size: var(--fs-18);
     }
 }
 
