@@ -19,7 +19,7 @@
 }
 
 .header .row {
-    margin: 80px calc((100% - var(--width)) / 2);
+    margin: 40px calc((100% - var(--width)) / 2);
 }
 
 .header-content {
